@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dcmitype="http://purl.org/dc/dcmitype/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <dc:title>多因子量化策略分析平台 - 课程设计答辩</dc:title>
+  <dc:subject>PptxGenJS Presentation</dc:subject>
+  <dc:creator>量化策略分析小组</dc:creator>
+  <cp:lastModifiedBy>世祺 李</cp:lastModifiedBy>
+  <cp:revision>2</cp:revision>
+  <dcterms:created xsi:type="dcterms:W3CDTF">2026-06-18T08:08:58Z</dcterms:created>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2026-06-21T13:47:26Z</dcterms:modified>
+</cp:coreProperties>

@@ -1,0 +1,63 @@
+# ============================================
+# 多因子量化策略配置文件
+# ============================================
+
+# --- 策略参数 ---
+strategy:
+  ma_fast: 5       # MA 快线周期
+  ma_slow: 20      # MA 慢线周期
+  rsi_period: 14   # RSI 计算周期
+  rsi_threshold: 70 # RSI 超买阈值
+  rsi_oversold: 30  # RSI 超卖阈值
+  rsi_position_cut: 60  # RSI 减仓起点
+  bb_window: 20    # 布林带周期
+  bb_n_std: 2.0    # 布林带标准差倍数
+  macd_fast: 12    # MACD 快线
+  macd_slow: 26    # MACD 慢线
+  macd_signal: 9   # MACD 信号线
+
+# --- 风控参数 ---
+risk:
+  stop_loss_pct: -0.08      # 固定止损 (-8%)
+  take_profit_pct: 0.25     # 固定止盈 (25%)
+  trailing_stop_pct: -0.06  # 追踪止损回撤 (-6%)
+  max_position_pct: 1.0     # 最大仓位
+  fee_rate: 0.0005          # 手续费 (万五)
+  enable_short: false       # 是否启用做空
+
+# --- 信号过滤 ---
+filters:
+  use_volume_filter: true   # 成交量过滤
+  use_bb_filter: true       # 布林带过滤
+  volume_ratio_min: 0.7     # 最小量比
+  enable_ml_enhance: false  # ML增强 (计算量大)
+
+# --- 数据配置 ---
+data:
+  start_date: "20220101"
+  end_date: "20251231"
+  frequency: "daily"
+  adjust: "qfq"            # 前复权
+
+# --- 回测配置 ---
+backtest:
+  initial_capital: 10000000  # 初始资金 (1000万)
+  benchmark: "000300"        # 基准指数
+  risk_free_rate: 0.02       # 无风险利率
+
+# --- 输出配置 ---
+output:
+  base_dir: "../output"
+  save_csv: true
+  save_json: true
+  save_html_report: true
+  save_plotly_charts: true
+
+# --- 参数优化网格 ---
+optimization:
+  ma_fast_range: [3, 5, 8, 10]
+  ma_slow_range: [15, 20, 25, 30]
+  rsi_threshold_range: [60, 65, 70, 75, 80]
+  bb_window_range: [15, 20, 25]
+  objective: "sharpe_ratio"  # 优化目标: sharpe_ratio, sortino_ratio, calmar_ratio, total_return
+  cv_folds: 5                # 交叉验证折数
