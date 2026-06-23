@@ -1053,7 +1053,7 @@ function shadow() {
 
   s.addText([
     { text: "GitHub：", options: { color: C.midGray, fontSize: 13 } },
-    { text: "github.com/<username>/quant-strategy", options: { color: C.blueLight, fontSize: 13 } },
+    { text: "github.com/7changecahng/quant-strategy", options: { color: C.blueLight, fontSize: 13 } },
     { text: "  (代码 + README + 39个测试)", options: { color: C.white, fontSize: 11 } },
     { text: "", options: { breakLine: true, fontSize: 6 } },
     { text: "Dashboard：", options: { color: C.midGray, fontSize: 13 } },
