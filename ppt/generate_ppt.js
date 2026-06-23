@@ -1057,7 +1057,7 @@ function shadow() {
     { text: "  (代码 + README + 39个测试)", options: { color: C.white, fontSize: 11 } },
     { text: "", options: { breakLine: true, fontSize: 6 } },
     { text: "Dashboard：", options: { color: C.midGray, fontSize: 13 } },
-    { text: "quant-strategy.streamlit.app (在线演示)", options: { color: C.blueLight, fontSize: 13 } },
+    { text: "quant-strategy-3nkwe9fzfgwskusbnx8lwz.streamlit.app", options: { color: C.blueLight, fontSize: 12 } },
     { text: "", options: { breakLine: true, fontSize: 6 } },
     { text: "完整代码 · 39个测试 · 参数可调 · 样本外验证 · 开源可复现", options: { color: C.midGray, fontSize: 12 } },
   ], { x: 0.6, y: 3.15, w: 7, h: 1.5, fontFace: "Calibri", margin: 0, valign: "top" });
